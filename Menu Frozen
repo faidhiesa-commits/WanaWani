@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WanaWani Home Kitchen - Preorder</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f8f8f8;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #ff6b6b;
+      color: white;
+      padding: 20px 0;
+    }
+    h1 { margin: 0; }
+    .menu-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 20px;
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 15px;
+      width: 250px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .card:hover { transform: scale(1.03); }
+    .card img {
+      width: 100%;
+      border-radius: 12px;
+    }
+    .card h2 { margin: 10px 0 5px; }
+    .card p { margin: 5px 0; }
+    .card button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      background-color: #ff6b6b;
+      color: white;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    .card button:hover { background-color: #ff4b4b; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>WanaWani Home Kitchen</h1>
+  <p>Preorder Menu Frozen - Siap Freeze & Reheat</p>
+</header>
+
+<div class="menu-container">
+
+  <div class="card">
+    <img src="https://via.placeholder.com/250x150?text=Lasagna" alt="Lasagna">
+    <h2>Lasagna</h2>
+    <p>RM30</p>
+    <p>Deposit RM10</p>
+    <button>Bayar Deposit</button>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/250x150?text=Mac+%26+Cheese" alt="Mac & Cheese">
+    <h2>Mac & Cheese</h2>
+    <p>RM25</p>
+    <p>Deposit RM10</p>
+    <button>Bayar Deposit</button>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/250x150?text=Spaghetti+Bolognese" alt="Spaghetti Bolognese">
+    <h2>Spaghetti Bolognese</h2>
+    <p>RM20</p>
+    <p>Deposit RM10</p>
+    <button>Bayar Deposit</button>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/250x150?text=Chicken+Wings" alt="Chicken Wings">
+    <h2>Chicken Wings</h2>
+    <p>RM18</p>
+    <p>Deposit RM5</p>
+    <button>Bayar Deposit</button>
+  </div>
+
+</div>
+
+</body>
+</html>
