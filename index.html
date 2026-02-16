@@ -5,16 +5,147 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WanaWani Home Kitchen</title>
   <style>
-    /* Global */
-    * { box-sizing: border-box; margin:0; padding:0; }
-    body { font-family: 'Poppins', sans-serif; background: #fff5f0; color: #333; line-height:1.6; }
-    a { text-decoration: none; }
-    
-    /* Header */
-    header { background: #ff6b6b; color: white; text-align:center; padding: 50px 20px; }
-    header h1 { font-size: 2.5em; margin-bottom:10px; }
-    header p { font-size: 1.2em; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #fff5f0;
+      color: #333;
+    }
+    header {
+      background: #ff6b6b;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    header h1 { margin-bottom: 10px; }
+    header p { margin-top: 0; }
 
-    /* Menu Cards */
-    .menu-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; padding: 40px 20px; max-width: 1200px; margin: 0 auto; }
-    .card { background:whit
+    /* Menu grid */
+    .menu-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 10px;
+    }
+    .card h2 { margin: 10px 0 5px; color: #ff4b4b; }
+    .card p { margin: 5px 0; }
+    .card button {
+      background: #ff6b6b;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    .card button:hover { background: #ff4b4b; }
+
+    /* Form */
+    form {
+      max-width: 500px;
+      margin: 50px auto;
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    form h2 { text-align:center; color: #ff6b6b; margin-bottom:20px; }
+    form input, form select {
+      width:100%;
+      padding:12px;
+      margin:8px 0;
+      border-radius:6px;
+      border:1px solid #ccc;
+      font-size:1em;
+    }
+    form button {
+      width:100%;
+      padding:12px;
+      border:none;
+      border-radius:8px;
+      background: #28a745;
+      color:white;
+      font-weight:bold;
+      cursor:pointer;
+    }
+    form button:hover { background:#218838; }
+
+    footer {
+      text-align:center;
+      padding:15px;
+      color:#777;
+      font-size:0.9em;
+      margin-top:50px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>WanaWani Home Kitchen</h1>
+  <p>Preorder Menu Frozen & Reheat Mudah</p>
+</header>
+
+<div class="menu-container">
+  <div class="card">
+    <img src="https://via.placeholder.com/220x120?text=Lasagna" alt="Lasagna">
+    <h2>Lasagna</h2>
+    <p>RM30 | Deposit RM10</p>
+    <button onclick="window.location.href='https://your-billplz-link.com';">Bayar Deposit</button>
+  </div>
+  <div class="card">
+    <img src="https://via.placeholder.com/220x120?text=Mac+%26+Cheese" alt="Mac & Cheese">
+    <h2>Mac & Cheese</h2>
+    <p>RM25 | Deposit RM10</p>
+    <button onclick="window.location.href='https://your-billplz-link.com';">Bayar Deposit</button>
+  </div>
+  <div class="card">
+    <img src="https://via.placeholder.com/220x120?text=Spaghetti+Bolognese" alt="Spaghetti Bolognese">
+    <h2>Spaghetti Bolognese</h2>
+    <p>RM20 | Deposit RM10</p>
+    <button onclick="window.location.href='https://your-billplz-link.com';">Bayar Deposit</button>
+  </div>
+  <div class="card">
+    <img src="https://via.placeholder.com/220x120?text=Chicken+Wings" alt="Chicken Wings">
+    <h2>Chicken Wings</h2>
+    <p>RM18 | Deposit RM5</p>
+    <button onclick="window.location.href='https://your-billplz-link.com';">Bayar Deposit</button>
+  </div>
+</div>
+
+<form action="https://docs.google.com/forms/d/e/YOUR_GOOGLE_FORM_ID/formResponse" method="POST" target="_blank">
+  <h2>Isi Preorder Form</h2>
+  <input type="text" name="entry.1234567890" placeholder="Masukkan Nama Penuh" required>
+  <input type="tel" name="entry.0987654321" placeholder="No Telefon" required>
+  <input type="date" name="entry.1122334455" required>
+  <select name="entry.6677889900" required>
+    <option value="">Pilih Menu</option>
+    <option value="Lasagna">Lasagna</option>
+    <option value="Mac & Cheese">Mac & Cheese</option>
+    <option value="Spaghetti Bolognese">Spaghetti Bolognese</option>
+    <option value="Chicken Wings">Chicken Wings</option>
+  </select>
+  <button type="submit">Submit Preorder</button>
+</form>
+
+<footer>
+  &copy; 2026 WanaWani Home Kitchen. Semua Hak Cipta Terpelihara.
+</footer>
+
+</body>
+</html>
