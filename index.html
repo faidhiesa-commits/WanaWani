@@ -3,85 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WanaWani Home Kitchen - Preorder</title>
+  <title>WanaWani Home Kitchen</title>
   <style>
-    body { font-family: Arial, sans-serif; background: #f8f8f8; margin:0; padding:0; }
-    header { background:#ff6b6b; color:white; padding:20px 0; text-align:center; }
-    h1 { margin:0; }
-    .menu-container { display:flex; flex-wrap:wrap; justify-content:center; gap:20px; padding:20px; }
-    .card { background:white; border-radius:12px; padding:15px; width:250px; box-shadow:0 4px 10px rgba(0,0,0,0.1); transition:0.2s; }
-    .card:hover { transform: scale(1.03); }
-    .card img { width:100%; border-radius:12px; }
-    .card h2 { margin:10px 0 5px; }
-    .card p { margin:5px 0; }
-    .card button { padding:10px 20px; border:none; border-radius:8px; background:#ff6b6b; color:white; cursor:pointer; margin-top:10px; }
-    .card button:hover { background:#ff4b4b; }
-    form { background:white; max-width:500px; margin:30px auto; padding:20px; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.1); }
-    form h2 { margin-top:0; }
-    form input, form select { width:100%; padding:10px; margin:10px 0; border-radius:6px; border:1px solid #ccc; }
-    form button { width:100%; background:#28a745; color:white; padding:12px; border:none; border-radius:8px; cursor:pointer; }
-    form button:hover { background:#218838; }
-  </style>
-</head>
-<body>
+    /* Global */
+    * { box-sizing: border-box; margin:0; padding:0; }
+    body { font-family: 'Poppins', sans-serif; background: #fff5f0; color: #333; line-height:1.6; }
+    a { text-decoration: none; }
+    
+    /* Header */
+    header { background: #ff6b6b; color: white; text-align:center; padding: 50px 20px; }
+    header h1 { font-size: 2.5em; margin-bottom:10px; }
+    header p { font-size: 1.2em; }
 
-<header>
-  <h1>WanaWani Home Kitchen</h1>
-  <p>Preorder Menu Frozen - Siap Freeze & Reheat</p>
-</header>
-
-<!-- Menu Cards -->
-<div class="menu-container">
-
-  <div class="card">
-    <img src="https://via.placeholder.com/250x150?text=Lasagna" alt="Lasagna">
-    <h2>Lasagna</h2>
-    <p>RM30</p>
-    <p>Deposit RM10</p>
-    <button onclick="window.location.href='https://your-billplz-link.com';">Bayar Deposit</button>
-  </div>
-
-  <div class="card">
-    <img src="https://via.placeholder.com/250x150?text=Mac+%26+Cheese" alt="Mac & Cheese">
-    <h2>Mac & Cheese</h2>
-    <p>RM25</p>
-    <p>Deposit RM10</p>
-    <button onclick="window.location.href='https://your-billplz-link.com';">Bayar Deposit</button>
-  </div>
-
-  <div class="card">
-    <img src="https://via.placeholder.com/250x150?text=Spaghetti+Bolognese" alt="Spaghetti Bolognese">
-    <h2>Spaghetti Bolognese</h2>
-    <p>RM20</p>
-    <p>Deposit RM10</p>
-    <button onclick="window.location.href='https://your-billplz-link.com';">Bayar Deposit</button>
-  </div>
-
-  <div class="card">
-    <img src="https://via.placeholder.com/250x150?text=Chicken+Wings" alt="Chicken Wings">
-    <h2>Chicken Wings</h2>
-    <p>RM18</p>
-    <p>Deposit RM5</p>
-    <button onclick="window.location.href='https://your-billplz-link.com';">Bayar Deposit</button>
-  </div>
-
-</div>
-
-<!-- Preorder Form -->
-<form action="https://docs.google.com/forms/d/e/YOUR_GOOGLE_FORM_ID/formResponse" method="POST" target="_blank">
-  <h2>Isi Preorder Form</h2>
-  <input type="text" name="entry.1234567890" placeholder="Nama Penuh" required>
-  <input type="tel" name="entry.0987654321" placeholder="No Telefon" required>
-  <input type="date" name="entry.1122334455" required>
-  <select name="entry.6677889900" required>
-    <option value="">Pilih Menu</option>
-    <option value="Lasagna">Lasagna</option>
-    <option value="Mac & Cheese">Mac & Cheese</option>
-    <option value="Spaghetti Bolognese">Spaghetti Bolognese</option>
-    <option value="Chicken Wings">Chicken Wings</option>
-  </select>
-  <button type="submit">Submit Preorder</button>
-</form>
-
-</body>
-</html>
+    /* Menu Cards */
+    .menu-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; padding: 40px 20px; max-width: 1200px; margin: 0 auto; }
+    .card { background:whit
